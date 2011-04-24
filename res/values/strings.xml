@@ -33,8 +33,6 @@
     <!-- Do Not Translate.  Unused string. -->
     <string name="account_setup_exchange_domain_label"></string>
     <!-- Do Not Translate.  Unused string. -->
-    <string name="account_setup_options_mail_window_all"></string>
-    <!-- Do Not Translate.  Unused string. -->
     <string name="accounts_context_menu_title"></string>
     <!-- Do Not Translate.  Unused string. -->
     <string name="accounts_title"></string>
@@ -114,6 +112,8 @@
     <string name="add_account_action">Add account</string>
     <!-- Menu item -->
     <string name="deselect_all_action">Deselect all</string>
+    <!-- Menu item -->
+    <string name="select_all_action">Select all</string>
     <!-- Menu item -->
     <string name="compose_action">Compose</string>
     <!-- Menu item/button name -->
@@ -495,6 +495,8 @@ save attachment.</string>
     <string name="account_setup_options_mail_window_2weeks">Two weeks</string>
     <!-- In account setup options & account settings screens (exchange), sync window length  -->
     <string name="account_setup_options_mail_window_1month">One month</string>
+    <!-- In account setup options & account settings screens (exchange), sync window length  -->
+    <string name="account_setup_options_mail_window_all">All emails</string>
 
     <!-- "Setup could not finish" dialog text; e.g., Username or password incorrect -->
     <string name="account_setup_failed_dlg_auth_message">Username or password incorrect.</string> 
@@ -627,7 +629,7 @@ save attachment.</string>
     <string name="provider_note_t_online">Before setting up this email account, please visit the T-Online Web site and create a password for POP3 email access.</string>
 
     <!-- Name of Microsoft Exchange account type; used by AccountManager -->
-    <string name="exchange_name">Corporate</string>
+    <string name="exchange_name">Exchange</string>
     <!-- Name of Microsoft Exchange account type; used by AccountManager -->
     <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
 
@@ -707,4 +709,14 @@ save attachment.</string>
          always a larger value because it represents the limit of displayed results.  -->
     <string name="gal_completed_limited_fmt">First <xliff:g id="results" example="20">%1$d</xliff:g>
         results from <xliff:g id="domain">%2$s</xliff:g></string>
+    <string name="sync_action">Toggle sync</string>
+    <string name="hide_action">Toggle visibility</string>
+    <string name="show_hidden_action">Show hidden folders</string>
+    <string name="hide_hidden_action">Hide hidden folders</string>
+    <string name="toast_folder_sync_on">Now syncing folder:</string>
+    <string name="toast_folder_sync_off">No longer syncing folder:</string>
+    <string name="toast_folder_sync_invalid">Invalid folder for syncing</string>
+    <string name="toast_folder_hide_on">Hiding folder:</string>
+    <string name="toast_folder_hide_off">Unhiding folder:</string>
+    <string name="toast_folder_hide_invalid">Cannot hide this folder!</string>
 </resources>
