@@ -1018,19 +1018,6 @@ public class MessageView extends Activity implements OnClickListener {
         Button attachmentView = (Button)view.findViewById(R.id.view);
         Button attachmentDownload = (Button)view.findViewById(R.id.download);
 
-        if ((!MimeUtility.mimeTypeMatches(attachmentInfo.contentType,
-                Email.ACCEPTABLE_ATTACHMENT_VIEW_TYPES))
-                || (MimeUtility.mimeTypeMatches(attachmentInfo.contentType,
-                        Email.UNACCEPTABLE_ATTACHMENT_VIEW_TYPES))) {
-            attachmentView.setVisibility(View.GONE);
-        }
-        if ((!MimeUtility.mimeTypeMatches(attachmentInfo.contentType,
-                Email.ACCEPTABLE_ATTACHMENT_DOWNLOAD_TYPES))
-                || (MimeUtility.mimeTypeMatches(attachmentInfo.contentType,
-                        Email.UNACCEPTABLE_ATTACHMENT_DOWNLOAD_TYPES))) {
-            attachmentDownload.setVisibility(View.GONE);
-        }
-
         if (attachmentInfo.size > Email.MAX_ATTACHMENT_DOWNLOAD_SIZE) {
             attachmentView.setVisibility(View.GONE);
             attachmentDownload.setVisibility(View.GONE);
